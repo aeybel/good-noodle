@@ -32,7 +32,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                                                      int viewType) {
         // create a new view (cell content)
         TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.camera_roll_cell, parent, false);
+                .inflate(R.layout.camera_roll_cell, parent, false); //this sets up what is going to be on the other resource page
         MyViewHolder vh = new MyViewHolder(v);
         return vh;
     }

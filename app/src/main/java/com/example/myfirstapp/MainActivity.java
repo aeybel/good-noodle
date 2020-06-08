@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     // vars to connect recycler view later
@@ -25,12 +27,15 @@ public class MainActivity extends AppCompatActivity {
         // in content do not change the layout size of the RecyclerView
         recyclerView.setHasFixedSize(true);
 
-        // use a grid layout manager
-        layoutManager = new GridLayoutManager(this, 2);
+        // use a grid layout manager - layout manager sets up the layout of the page/object
+        layoutManager = new GridLayoutManager(this, 2); //spancount is number of columns
         recyclerView.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
+        // adapter makes each cell/puts the thing in them
         mAdapter = new MyAdapter(new String[]{"item 1", "item 2", "item 3"}); // using temp dataset
         recyclerView.setAdapter(mAdapter);
     }
+
+
 }
