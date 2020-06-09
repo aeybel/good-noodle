@@ -2,4 +2,10 @@
     <string name="app_name">Timelessly</string>
     <string name="camera_roll">Camera Roll</string>
     <string name="camera_item">camera_item</string>
+    <string name="title_activity_main2">title_2</string>
+    <string name="previous">previous</string>
+    <string name="hello_first_fragment">hello_first</string>
+    <string name="next">next</string>
+    <string name="first_fragment_label">first_label</string>
+    <string name="second_fragment_label">second_label</string>
 </resources>
