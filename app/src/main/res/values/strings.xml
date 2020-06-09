@@ -8,4 +8,7 @@
     <string name="next">next</string>
     <string name="first_fragment_label">first_label</string>
     <string name="second_fragment_label">second_label</string>
+    <string name="title_activity_floating_button">floating_button</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="return_home">Return to Home</string>
 </resources>

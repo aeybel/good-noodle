@@ -2,6 +2,7 @@ package com.example.myfirstapp;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,10 +15,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     // you provide access to all the views for a data item in a view holder
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
+        public LinearLayout cellView;
         public TextView textView;
-        public MyViewHolder(TextView v) {
+        public MyViewHolder(LinearLayout v) {
             super(v);
-            textView = v;
+            textView = v.findViewById(R.id.cellText);
+            cellView = v;
         }
     }
 
@@ -31,7 +34,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public MyAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
                                                      int viewType) {
         // create a new view (cell content)
-        TextView v = (TextView) LayoutInflater.from(parent.getContext())
+        LinearLayout v = (LinearLayout) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.camera_roll_cell, parent, false);
         MyViewHolder vh = new MyViewHolder(v);
         return vh;
