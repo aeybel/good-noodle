@@ -30,17 +30,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="16dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginRight="104dp"
-        android:contentDescription="@string/return_home"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toTopOf="@+id/camera_recycle"
-        app:layout_constraintEnd_toStartOf="@+id/textView" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
