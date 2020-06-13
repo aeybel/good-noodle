@@ -23,7 +23,7 @@ public class LoadingScreen extends AppCompatActivity {
     }
 
     public void openMainActivity() {
-        Intent myIntent = new Intent(this, MainActivity.class);
+        Intent myIntent = new Intent(this, HomeScreen.class);
         startActivity(myIntent);
     }
 

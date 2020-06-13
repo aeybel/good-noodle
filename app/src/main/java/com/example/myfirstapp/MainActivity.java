@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -38,6 +39,18 @@ public class MainActivity extends AppCompatActivity {
         // adapter makes each cell/puts the thing in them
         mAdapter = new MyAdapter(new String[]{"item 1", "item 2", "item 3"}); // using temp dataset
         recyclerView.setAdapter(mAdapter);
+
+        final Button button = findViewById(R.id.back_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openHomeScreen();
+            }
+        });
+    }
+
+    public void openHomeScreen() {
+        Intent myIntent = new Intent(this, HomeScreen.class);
+        startActivity(myIntent);
     }
 
 
