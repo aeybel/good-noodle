@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class HomeScreen extends AppCompatActivity {
 
     @Override
@@ -41,10 +43,22 @@ public class HomeScreen extends AppCompatActivity {
                 openCameraActivity();
             }
         });
+
+        final FloatingActionButton button5 = findViewById(R.id.settings_fab);
+        button5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openSettingsActivity();
+            }
+        });
     }
 
     public void openCameraActivity() {
         Intent myIntent = new Intent(this, MainActivity.class);
+        startActivity(myIntent);
+    }
+
+    public void openSettingsActivity() {
+        Intent myIntent = new Intent(this, SettingsScreen.class);
         startActivity(myIntent);
     }
 }
