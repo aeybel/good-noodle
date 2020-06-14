@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myfirstapp.patientselect.PatientSelect;
+
 public class LoadingScreen extends AppCompatActivity {
 
     @Override
@@ -23,7 +25,7 @@ public class LoadingScreen extends AppCompatActivity {
     }
 
     public void openMainActivity() {
-        Intent myIntent = new Intent(this, MainActivity.class);
+        Intent myIntent = new Intent(this, PatientSelect.class);
         startActivity(myIntent);
     }
 
