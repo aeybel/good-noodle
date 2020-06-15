@@ -1,15 +1,18 @@
 package com.example.myfirstapp.patientselect;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.widget.EditText;
 import android.widget.SearchView;
-import android.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.patientselect.dummy.DummyContent;
@@ -21,15 +24,16 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 // 1. implement OnListFragmentInteractionListener for List fragment !
 
-public class PatientSelect extends FragmentActivity implements PatientFragment.OnListFragmentInteractionListener {
+public class PatientSelect extends AppCompatActivity implements PatientFragment.OnListFragmentInteractionListener {
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.patient_select);
 
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
     @Override
