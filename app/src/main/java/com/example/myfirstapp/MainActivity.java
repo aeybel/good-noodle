@@ -13,8 +13,6 @@ import android.view.View;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-import static android.graphics.drawable.ClipDrawable.HORIZONTAL;
-
 public class MainActivity extends AppCompatActivity {
     // vars to connect recycler view later
     private RecyclerView recyclerView;
@@ -41,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
         // adapter makes each cell/puts the thing in them
         mAdapter = new MyAdapter(new String[]{"item 1", "item 2", "item 3"}); // using temp dataset
         recyclerView.setAdapter(mAdapter);
-
-        //divider of items
-        DividerItemDecoration itemDecor = new DividerItemDecoration(this, HORIZONTAL);
-        recyclerView.addItemDecoration(itemDecor);
     }
 
 

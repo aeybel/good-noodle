@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +16,8 @@ import android.view.ViewGroup;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.patientselect.dummy.DummyContent;
 import com.example.myfirstapp.patientselect.dummy.DummyContent.PatientItem;
+
+import static android.graphics.drawable.ClipDrawable.HORIZONTAL;
 
 /**
  * A fragment representing a list of Items.
@@ -75,6 +78,8 @@ public class PatientFragment extends Fragment {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
             recyclerView.setAdapter(new MyPatientRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+            DividerItemDecoration itemDecor = new DividerItemDecoration(context, HORIZONTAL);
+            recyclerView.addItemDecoration(itemDecor);
         }
         return view;
     }
