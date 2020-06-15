@@ -1,6 +1,7 @@
 package com.example.myfirstapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,6 +12,8 @@ import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+
+import static android.graphics.drawable.ClipDrawable.HORIZONTAL;
 
 public class MainActivity extends AppCompatActivity {
     // vars to connect recycler view later
@@ -38,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
         // adapter makes each cell/puts the thing in them
         mAdapter = new MyAdapter(new String[]{"item 1", "item 2", "item 3"}); // using temp dataset
         recyclerView.setAdapter(mAdapter);
+
+        //divider of items
+        DividerItemDecoration itemDecor = new DividerItemDecoration(this, HORIZONTAL);
+        recyclerView.addItemDecoration(itemDecor);
     }
 
 

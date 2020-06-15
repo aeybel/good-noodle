@@ -8,6 +8,7 @@ import android.util.Log;
 
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.patientselect.dummy.DummyContent;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 // INFO:
 // - use List Fragment for patient list
@@ -38,5 +39,6 @@ public class PatientSelect extends FragmentActivity implements PatientFragment.O
     @Override
     public void onListFragmentInteraction(DummyContent.PatientItem item) {
         Log.i("list fragment", String.format("clicked on %s", item.name));
+        SelectedPatientDialogFragment.newInstance(item.id).show(getSupportFragmentManager(), "dialog");
     }
 }

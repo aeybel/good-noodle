@@ -4,7 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".patientselect.PatientSelect">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/search_names"
+        android:inputType="textPersonName"
+        android:autofillHints="AUTOFILL_HINT_NAME"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/patient_list_fragment"

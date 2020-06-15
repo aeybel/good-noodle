@@ -38,7 +38,6 @@ public class MyPatientRecyclerViewAdapter extends RecyclerView.Adapter<MyPatient
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
         holder.mContentView.setText(mValues.get(position).name);
 
         // notify activity of item selection
@@ -60,15 +59,13 @@ public class MyPatientRecyclerViewAdapter extends RecyclerView.Adapter<MyPatient
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
-        public final TextView mIdView;
         public final TextView mContentView;
         public PatientItem mItem;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mIdView = (TextView) view.findViewById(R.id.item_number);
-            mContentView = (TextView) view.findViewById(R.id.content);
+            mContentView = (TextView) view.findViewById(R.id.patient_name);
         }
 
         @Override

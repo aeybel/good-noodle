@@ -11,4 +11,8 @@
     <string name="title_activity_floating_button">floating_button</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="return_home">Return to Home</string>
+    <string name="sample_patient">Sample Patient</string>
+    <string name="confirm_patient">Confirm</string>
+    <string name="patient_profile_picture">Patient\'s Profile Picture</string>
+    <string name="search_names">Search Names</string>
 </resources>
