@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 
+import com.example.myfirstapp.HomeScreen;
 import com.example.myfirstapp.MainActivity;
 import com.example.myfirstapp.patientselect.dummy.DummyContent;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
@@ -80,7 +81,7 @@ public class SelectedPatientDialogFragment extends BottomSheetDialogFragment {
         // adding onclick listener to confirm button
         confirmButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent toPatientMain = new Intent(getActivity(), MainActivity.class);
+                    Intent toPatientMain = new Intent(getActivity(), HomeScreen.class);
                     startActivity(toPatientMain);
             }
         });
