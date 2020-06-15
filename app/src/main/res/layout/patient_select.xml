@@ -7,15 +7,13 @@
     android:orientation="vertical"
     tools:context=".patientselect.PatientSelect">
 
-    <EditText
-        android:id="@+id/editText"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:hint="@string/search_names"
-        android:inputType="textPersonName"
-        android:autofillHints="AUTOFILL_HINT_NAME"/>
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/patient_list_fragment"

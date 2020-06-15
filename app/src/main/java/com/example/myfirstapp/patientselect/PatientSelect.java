@@ -5,6 +5,11 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.widget.EditText;
+import android.widget.SearchView;
+import android.widget.Toolbar;
 
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.patientselect.dummy.DummyContent;
@@ -22,6 +27,17 @@ public class PatientSelect extends FragmentActivity implements PatientFragment.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.patient_select);
+
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.patient_select_menu, menu);
+
+        return true;
     }
 
     @Override

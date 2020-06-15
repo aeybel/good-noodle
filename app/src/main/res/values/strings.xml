@@ -15,4 +15,5 @@
     <string name="confirm_patient">Confirm</string>
     <string name="patient_profile_picture">Patient\'s Profile Picture</string>
     <string name="search_names">Search Names</string>
+    <string name="search_patients">Search Patients</string>
 </resources>
