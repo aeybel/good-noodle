@@ -26,7 +26,6 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 public class PatientSelect extends AppCompatActivity implements PatientFragment.OnListFragmentInteractionListener {
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,13 +33,16 @@ public class PatientSelect extends AppCompatActivity implements PatientFragment.
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.patient_select_menu, menu);
-
+        SearchView searchBar = (SearchView) menu.findItem(R.id.search_bar).getActionView();
+        searchBar.setIconifiedByDefault(false);
+        searchBar.clearFocus();
         return true;
     }
 

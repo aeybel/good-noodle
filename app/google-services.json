@@ -36,5 +36,9 @@
       }
     }
   ],
-  "configuration_version": "1"
+  "configuration_version": "1",
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
 }

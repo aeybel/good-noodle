@@ -10,6 +10,8 @@ import android.widget.TextView;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.patientselect.PatientFragment.OnListFragmentInteractionListener;
 import com.example.myfirstapp.patientselect.dummy.DummyContent.PatientItem;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 
@@ -22,6 +24,7 @@ public class MyPatientRecyclerViewAdapter extends RecyclerView.Adapter<MyPatient
     //
     private final List<PatientItem> mValues;
     private final OnListFragmentInteractionListener mListener;
+
 
     public MyPatientRecyclerViewAdapter(List<PatientItem> items, OnListFragmentInteractionListener listener) {
         mValues = items;
