@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "818247923861",
+    "firebase_url": "https://good-noodle.firebaseio.com",
+    "project_id": "good-noodle",
+    "storage_bucket": "good-noodle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818247923861:android:a29f487d6c7a197c05439c",
+        "android_client_info": {
+          "package_name": "com.example.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818247923861-vn6qgl6pjn1tv5cijfqmuj7e14cnf3as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5e-iTgQkpMLpsb89sRJI6jr2OdjtMfpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818247923861-vn6qgl6pjn1tv5cijfqmuj7e14cnf3as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
