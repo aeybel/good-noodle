@@ -16,8 +16,9 @@ import android.view.ViewGroup;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.patientselect.dummy.DummyContent;
 import com.example.myfirstapp.patientselect.dummy.DummyContent.PatientItem;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import static android.graphics.drawable.ClipDrawable.HORIZONTAL;
 
@@ -34,7 +35,6 @@ public class PatientFragment extends Fragment {
     // TODO: Customize parameters
     private int mColumnCount = 1;
     private OnListFragmentInteractionListener mListener;
-    private DatabaseReference mDatabase;
 
     public void setOnListFragmentInteractionListener (OnListFragmentInteractionListener mListener) {
         this.mListener = mListener;
@@ -71,8 +71,7 @@ public class PatientFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_patient_list, container, false);
 
-        // get database (later passed on to adapter)
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         // Set the adapter
         if (view instanceof RecyclerView) {
