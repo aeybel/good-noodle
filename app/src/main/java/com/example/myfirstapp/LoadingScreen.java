@@ -25,7 +25,7 @@ public class LoadingScreen extends AppCompatActivity {
     }
 
     public void openMainActivity() {
-        Intent myIntent = new Intent(this, PatientSelect.class);
+        Intent myIntent = new Intent(this, RegisterPatient.class);
         startActivity(myIntent);
     }
 
