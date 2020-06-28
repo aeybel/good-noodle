@@ -17,8 +17,6 @@ import com.example.myfirstapp.R;
 import com.example.myfirstapp.patientselect.dummy.DummyContent;
 import com.example.myfirstapp.patientselect.dummy.DummyContent.PatientItem;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
 
 import static android.graphics.drawable.ClipDrawable.HORIZONTAL;
 
