@@ -53,12 +53,14 @@ public class RegisterPatient extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(DocumentReference documentReference) {
                                     Log.d("db", "DocumentSnapshot written with ID: " + documentReference.getId()+ " name is " + fn + " " + ln);
+                                    finish();
                                 }
                             })
                             .addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
                                     Log.w("db", "error adding doc", e);
+                                    Toast.makeText(RegisterPatient.this, "There was an error saving, please try again later.", Toast.LENGTH_LONG).show();
                                 }
                             });
                 }

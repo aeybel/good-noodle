@@ -7,4 +7,9 @@
         android:title="@string/search_patients"
         app:actionViewClass="android.widget.SearchView"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/add_patient_button"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:title="@string/add_patient"
+        app:showAsAction="ifRoom"/>
 </menu>
