@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "818247923861-kpeinctpnj9537hbraj2hb0mqr27jogo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myfirstapp",
+            "certificate_hash": "8367a3dfb91539197197070483e30e4c56fe59b0"
+          }
+        },
+        {
           "client_id": "818247923861-vn6qgl6pjn1tv5cijfqmuj7e14cnf3as.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -36,9 +44,5 @@
       }
     }
   ],
-  "configuration_version": "1",
-  "rules": {
-    ".read": true,
-    ".write": true
-  }
+  "configuration_version": "1"
 }
