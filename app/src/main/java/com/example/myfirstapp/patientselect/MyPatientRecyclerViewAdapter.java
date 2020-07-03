@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.patientselect.PatientFragment.OnListFragmentInteractionListener;
 import com.example.myfirstapp.patientselect.dummy.DummyContent.PatientItem;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 

@@ -1,7 +1,14 @@
 package com.example.myfirstapp.datainfo;
 
-public class Patient {
+import com.google.firebase.firestore.IgnoreExtraProperties;
 
+import java.io.Serializable;
+
+@IgnoreExtraProperties
+public class Patient implements Serializable {
+
+    // is id included? idonthinkso
+    //private String id;
     private String firstName;
     private String lastName;
     // TODO: add pfp prop
