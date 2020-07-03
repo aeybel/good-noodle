@@ -50,6 +50,13 @@ public class HomeScreen extends AppCompatActivity {
                 openSettingsActivity();
             }
         });
+
+        final Button uploadButton = findViewById(R.id.to_upload_button);
+        uploadButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openUploadActivity();
+            }
+        });
     }
 
     public void openCameraActivity() {
@@ -59,6 +66,11 @@ public class HomeScreen extends AppCompatActivity {
 
     public void openSettingsActivity() {
         Intent myIntent = new Intent(this, SettingsScreen.class);
+        startActivity(myIntent);
+    }
+
+    public void openUploadActivity() {
+        Intent myIntent = new Intent(this, PhotoUpload.class);
         startActivity(myIntent);
     }
 }
