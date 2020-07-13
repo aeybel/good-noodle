@@ -26,6 +26,8 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 public class PhotoUpload extends AppCompatActivity implements View.OnClickListener {
+    // TODO: handle exceptions and errors with photo uploading
+
     private static final int RESULT_LOAD_IMAGE = 1;
 
     // Initialize all the stuff
@@ -83,6 +85,7 @@ public class PhotoUpload extends AppCompatActivity implements View.OnClickListen
     }
 
     // Method called when user selects a photo from the gallery
+    // TODO: Maybe compress the images so that they always fit to the screen and also take up less space in firestore.
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

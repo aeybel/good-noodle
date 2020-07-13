@@ -11,7 +11,6 @@ public class Patient implements Serializable {
     //private String id;
     private String firstName;
     private String lastName;
-    // TODO: add pfp prop
 
     // mandatory constructor
     public Patient() {}
