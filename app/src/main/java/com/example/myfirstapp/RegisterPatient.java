@@ -79,6 +79,7 @@ public class RegisterPatient extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(DocumentReference documentReference) {
                                     Log.d("db", "DocumentSnapshot written with ID: " + documentReference.getId()+ " name is " + fn + " " + ln);
+                                    Toast.makeText(RegisterPatient.this, "Patient " + fn + " " + ln + " added successfully", Toast.LENGTH_LONG).show();
                                     finish();
                                 }
                             })

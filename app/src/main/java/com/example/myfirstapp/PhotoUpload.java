@@ -103,7 +103,7 @@ public class PhotoUpload extends AppCompatActivity implements View.OnClickListen
         StorageReference photoRef = mStorageRef.child("images").child(selectedImageUri.getLastPathSegment());
 
         // This uploads it into firebase storage
-        // I have no idea what Toast does
+        // Toast makes the little comment appear at the bottom of the screen
         photoRef.putFile(selectedImageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @SuppressLint("ShowToast")
             @Override
